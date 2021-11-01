@@ -1,17 +1,5 @@
-
 import 'package:flutter/material.dart';
+import 'src/app.dart';
 
-void main() {
-  runApp(new MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key, required Text home}) : super(key: key);
-
-  @override
-  Widget build(context) {
-    return const MyApp(
-      home: Text("Hello")
-    );
-  }
-}
+// ignore: prefer_const_constructors
+void main() => runApp(MyApp());
