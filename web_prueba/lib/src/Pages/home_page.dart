@@ -9,10 +9,10 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         // ignore: prefer_const_constructors
         title: Text("Titulo"),
-       
+        centerTitle: true,       
       ),
        body: const Center(
-         child: Text("Hola mundo"),
+          child: Text("Tiembla JP"),
          )
     );
   }
