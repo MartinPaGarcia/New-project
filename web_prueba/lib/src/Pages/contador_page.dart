@@ -38,7 +38,7 @@ class _ContadorState extends State<Contador> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.end,
       children: <Widget>[
-        SizedBox(width: 30),
+        SizedBox(width: 30.0),
         FloatingActionButton(child: Icon(Icons.exposure_zero), onPressed: _reset),
         Expanded(child: SizedBox()),
         FloatingActionButton(child: Icon(Icons.remove), onPressed: _resta),
