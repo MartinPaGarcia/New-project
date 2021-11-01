@@ -39,14 +39,26 @@ class _ContadorState extends State<Contador> {
       mainAxisAlignment: MainAxisAlignment.end,
       children: <Widget>[
         SizedBox(width: 30),
-        FloatingActionButton(child: Icon(Icons.exposure_zero), onPressed: null),
+        FloatingActionButton(child: Icon(Icons.exposure_zero), onPressed: _reset),
         Expanded(child: SizedBox()),
-        FloatingActionButton(child: Icon(Icons.remove), onPressed: null),
+        FloatingActionButton(child: Icon(Icons.remove), onPressed: _resta),
         SizedBox(width: 5.0),
-        FloatingActionButton(child: Icon(Icons.add), onPressed: null),
+        FloatingActionButton(child: Icon(Icons.add), onPressed: _agrega),
       ],
     );
-
-    
   }
+
+  void _agrega() {
+    setState(()=> _contador++);
+  }
+
+  void _resta() {
+    setState(()=> _contador--);
+  }
+
+  void _reset() {
+    setState(()=> _contador=0);
+  }
+
+  
 }
